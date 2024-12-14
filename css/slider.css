@@ -1,0 +1,73 @@
+/* Estilos generales */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative; /* Agregamos position: relative para que los botones se posicionen correctamente */
+}
+
+.slider img {
+  height: auto;
+  width: 100%;
+}
+
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 4s linear;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.slider li {
+  width: 25%;
+}
+
+/* Media Queries para dispositivos móviles */
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+}
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .slider img {
+    height: 300px;
+    width: 100%;
+  }
+
+  .slider ul {
+    width: 400%; /* Ajustar el ancho del 300% para pantallas pequeñas */
+  }
+
+  .slider li {
+    width: 100%; /* Ajustar el ancho del 100% para pantallas pequeñas */
+  }
+}
+
+/* Estilos para los botones */
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-button {
+  font-size: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+}
+
+.slider-button:focus {
+  outline: none;
+}

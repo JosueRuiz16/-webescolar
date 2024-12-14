@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+.credius {
+  list-style: none;
+}
+/* Footer */
+.pie {
+  background: rgb(177, 22, 22);
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.pie h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.pie .grupo-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.pie .grupo-2 small {
+  font-size: 16px;
+  flex: 1 1 100%; /* Ocupar todo el ancho en móviles */
+}
+
+.pie .grupo-2 address {
+  font-size: 18px;
+  flex: 1 1 100%; /* Ocupar todo el ancho en móviles */
+}
+
+.pie .grupo-2 a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  flex: 1 1 100%; /* Ocupar todo el ancho en móviles */
+  display: block; /* Convertir el enlace en bloque para ocupar todo el ancho */
+  margin-top: 10px; /* Agregar un pequeño espacio entre los enlaces en móviles */
+}
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .pie {
+    height: auto; /* Altura automática para ajustarse al contenido */
+  }
+
+  .pie .grupo-2 {
+    flex-direction: column; /* Cambiamos la dirección a columna en móviles */
+    align-items: center; /* Centramos el contenido en móviles */
+  }
+
+  .pie h1 {
+    font-size: 30px;
+  }
+}
+#noel{
+  width: 50%;
+  height: 50px;
+  margin-left: 37%;
+}
+/* Loader que ocupa toda la pantalla */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff; /* Cambia según el fondo deseado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Ocultar el loader */
+#loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}

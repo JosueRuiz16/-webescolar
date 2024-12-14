@@ -1,0 +1,54 @@
+* {
+  background-color: brown;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.staff-member {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+}
+
+.staff-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.staff-photo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.staff-description {
+  flex: 1;
+}
+
+.staff-description h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.staff-description p {
+  margin-bottom: 0;
+  text-align: justify;
+}

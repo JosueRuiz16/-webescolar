@@ -1,0 +1,116 @@
+* {
+  font-family: "Segoe UI";
+}
+
+/* Responsivo para dispositivos móviles */
+@media (max-width: 767px) {
+  .redes_sociales {
+    display: none;
+  }
+
+  .redes_sociales_floating {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(177, 22, 22);
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .redes_sociales_floating a {
+    color: #fff;
+    margin: 5px;
+  }
+}
+
+/* Ajustes para dispositivos móviles y tabletas */
+@media (max-width: 1024px) {
+  .conteiner-img img,
+  .eventos-2 img,
+  .ingles-imagen img {
+    width: 100%;
+    height: auto;
+  }
+
+  .eventos-pa p,
+  .info-2 p,
+  .info_4 p {
+    font-size: 16px;
+    margin-top: 60px;
+  }
+}
+
+/* Estilos normales para pantallas de PC */
+/* Asegúrate de ajustar el valor del media query según el tamaño deseado */
+@media (min-width: 1025px) {
+  .logo img {
+    width: 150px;
+    height: 60px;
+    margin-top: 10px;
+  }
+
+  .menu {
+    flex: 1 5 auto;
+    display: block;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .menu li {
+    margin: 0 20px;
+  }
+
+  .redes_sociales {
+    flex: 1 1 auto;
+    margin: 0;
+  }
+
+  .redes_sociales .red {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+  }
+
+  .redes_sociales a {
+    color: #fff;
+    font-size: 26px;
+    margin: 0 10px;
+  }
+
+  .redes_sociales_floating {
+    display: none;
+  }
+}
+.info_4 p {
+  font-size: 22px;
+}
+.imagen img {
+  width: 60%;
+}
+.ingles-imagen img {
+  width: 60%;
+}
+.info-2 p {
+  font-size: 22px;
+}
+.eventos-pa p {
+  font-size: 22px;
+}
+.subtitulo p {
+  font-size: 22px;
+  text-align: center;
+}
+.encabezado img {
+  height: 98px;
+}
+#noel{
+  width: 50%;
+  height: 50px;
+  margin-left: 37%;
+}

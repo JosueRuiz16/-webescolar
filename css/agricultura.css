@@ -1,0 +1,325 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+}
+
+body {
+  max-width: 1436px;
+  font-family: cursive;
+}
+
+/* Header */
+header {
+  background: rgb(177, 22, 22);
+  color: #fff;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+}
+
+.menu-horizontal li {
+  padding: 0 15px;
+}
+.turismo-1 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+
+.turismo-1 img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+.turismo-pa p {
+  font-size: 20px;
+  margin-top: 20px;
+  font-family: cursive;
+}
+
+/* Estilos para dispositivos móviles y tabletas */
+@media screen and (max-width: 768px) {
+  .turismo-1 {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .turismo-pa {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .turismo-1 img {
+    max-height: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+.red a {
+  color: #fff;
+  font-size: 26px;
+  margin-inline: 10px;
+}
+
+/* Main */
+main {
+  max-width: 100%;
+}
+.turismo-1 img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 5px;
+}
+hr {
+  width: 50%;
+  margin: auto;
+}
+
+.subtitulo2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.turismo-pa {
+  width: 50%;
+  margin-top: 10%;
+  font-family: cursive;
+  margin-right: 50px;
+}
+
+.turismo-pa a {
+  text-decoration: none;
+  color: blue;
+}
+
+.turismo-1 p {
+  width: 100%;
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.turismo-2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-right: 180px;
+}
+
+.seccion1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seccion1 li {
+  margin-left: 40px;
+  margin-top: 30px;
+  flex-basis: 50%;
+}
+
+.seccion1 img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.turismo-pa2 {
+  font-size: 20px;
+  margin-top: 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 100px;
+  margin-bottom: 90px;
+}
+
+.turismo-pa2 p {
+  margin-top: 20px;
+}
+
+/* Estilos para dispositivos móviles y tabletas */
+@media screen and (max-width: 768px) {
+  .turismo-pa2 {
+    width: 80%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.hotel {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  border-radius: 40px;
+}
+
+.subtitulo1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.subtitulo1 h1 {
+  font-size: 30px;
+}
+
+.hotel img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Estilos para dispositivos móviles y tabletas */
+@media screen and (max-width: 768px) {
+  .subtitulo1 h1 {
+    font-size: 24px;
+  }
+
+  .hotel img {
+    max-width: 90%;
+  }
+}
+
+.video1 {
+  width: 60%;
+  max-width: 100%;
+  display: flex;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f3f1f3;
+  border: white solid 5px;
+  box-shadow: inset 0 0 10px rgb(21, 59, 16), 0 0 80px rgb(13, 250, 5);
+}
+
+/* Footer */
+.pie {
+  background: rgb(177, 22, 22);
+  padding: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.pie h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.pie .grupo-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.pie .grupo-2 small {
+  font-size: 16px;
+  flex: 1 1 100%;
+}
+
+.pie .grupo-2 address {
+  font-size: 18px;
+  flex: 1 1 100%;
+}
+
+.pie .grupo-2 a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  flex: 1 1 100%;
+  display: block;
+  margin-top: 10px;
+}
+.alumnos {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  font-family: cursive;
+}
+
+.alumnos img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-right: 20px;
+}
+.turismo-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.turismo-2 img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+}
+.info-alumnos {
+  font-size: 20px;
+}
+/* Estilos para dispositivos móviles y tabletas */
+@media screen and (max-width: 768px) {
+  .turismo-2 {
+    margin-top: 20px;
+  }
+
+  .turismo-2 img {
+    max-height: 300px;
+  }
+}
+/* Estilos para dispositivos móviles y tabletas */
+@media screen and (max-width: 768px) {
+  .alumnos {
+    flex-direction: column;
+  }
+
+  .alumnos img {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .info-alumnos {
+    font-size: 16px;
+  }
+}
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .turismo-1,
+  .seccion1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .turismo-1 img,
+  .seccion1 img {
+    max-width: 100%;
+  }
+
+  .turismo-1 p,
+  .seccion1 li {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .turismo-pa,
+  .turismo-pa2 {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .video1 {
+    width: 80%;
+  }
+}

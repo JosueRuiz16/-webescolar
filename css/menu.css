@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background: rgb(177, 22, 22);
+}
+.encabezado2 p {
+  text-align: center;
+  color: #fff;
+}
+.encabezado2 {
+  height: 70px;
+  font-size: 20px;
+  font-family: cursive;
+  background-color: black;
+}
+/* Estilos generales */
+.logo {
+  flex: 1 1 auto;
+}
+.menu-vertical.show {
+  display: block;
+}
+.logo img {
+  width: 100px;
+  height: 90px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .logo img {
+    height: 90px;
+    position: relative;
+  }
+
+  header {
+    height: 280px;
+  }
+  #carrerasButton {
+    margin-left: 990px;
+  }
+}
+.menu {
+  flex: 1 5 auto;
+  height: auto;
+  position: relative;
+}
+
+.redes_sociales {
+  flex: 1 1 auto;
+  margin: 10px 40px 0;
+}
+
+.red {
+  margin-top: 20px;
+  justify-content: center; /* Centramos horizontalmente las redes sociales */
+}
+
+.red a {
+  font-size: 26px;
+  margin-inline: 10px;
+}
+
+.what {
+  color: green;
+}
+
+.gmail {
+  color: #fff;
+}
+
+.encabezado {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten al ancho de la pantalla en dispositivos móviles */
+  justify-content: space-between; /* Espacio uniforme entre los elementos en el encabezado */
+  align-items: center; /* Centramos verticalmente los elementos del encabezado */
+  padding: 10px; /* Agregamos un poco de espaciado entre los elementos */
+}
+
+nav {
+  flex: 1 1 80%; /* Ajustamos el ancho de la navegación para que ocupe el 100% del espacio disponible */
+  max-width: 900px;
+  margin: auto;
+}
+.menu-horizontal {
+  list-style: none;
+  display: flex;
+  margin-right: 100px;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.menu-horizontal li {
+  position: relative;
+  overflow: hidden;
+}
+/* Estilos para pantallas grandes */
+#carrerasButton {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 14px;
+  font-size: 16px;
+  margin-right: 20px;
+  width: auto;
+  font-family: cursive;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu-horizontal li a {
+  color: #fff;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-right: 1px;
+  padding-right: 120px;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+  #carrerasButton {
+    margin-right: 50px; /* Ajusta el margen para móviles */
+    font-size: 8px; /* Ajusta el tamaño de fuente para móviles */
+  }
+
+  .menu-horizontal li a {
+    padding-right: 20px; /* Ajusta el padding para móviles */
+    font-size: 8px; /* Ajusta el tamaño de fuente para móviles */
+  }
+}
+
+.red {
+  flex-direction: column;
+  align-items: center; /* Centramos horizontalmente las redes sociales en dispositivos móviles */
+}
+
+.red a {
+  margin: 7px; /* Ajustamos el espaciado de las redes sociales */
+}
+
+/* Opcional: cambiar el estilo cuando el cursor está sobre el botón */
+#carrerasButton:hover {
+  color: red; /* Cambiar el color del texto cuando el cursor está sobre él */
+  text-decoration: none; /* Eliminar el subrayado en el hover */
+}
+
+@media (max-width: 767px) {
+  .redes_sociales {
+    display: none;
+  }
+
+  .redes_sociales_floating {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(177, 22, 22);
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .redes_sociales_floating a {
+    color: #fff;
+    margin: 5px;
+  }
+}
+/* Resto de estilos... */
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 600px) {
+  .menu-horizontal {
+    flex-direction: column; /* Alinear las anclas verticalmente en móviles */
+  }
+
+  .menu-horizontal li {
+    text-align: center; /* Centrar el texto de las anclas en móviles */
+  }
+
+  .menu-horizontal li a {
+    padding: 10px 20px; /* Ajustar el padding de las anclas en móviles */
+    font-size: 12px; /* Ajustar el tamaño de fuente de las anclas en móviles */
+  }
+
+  .menu-horizontal li ul {
+    display: none; /* Ocultar el menú vertical en móviles */
+  }
+  .menu-horizontal li ul li {
+    width: 100%; /* Ajustar el ancho del menú vertical al 100% en móviles */
+    text-align: center; /* Centrar el texto del menú vertical en móviles */
+  }
+}
+#carrerasButton {
+  font-size: 12px; /* Ajusta el tamaño de fuente para el botón "Carreras" en móviles */
+  margin-left: 70px;
+}
+
+.menu-horizontal li:nth-child(3) {
+  order: 3; /* Cambiar el orden del tercer elemento (Carreras) en móviles */
+}
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  .encabezado {
+    flex-direction: column; /* Cambia el flujo de los elementos a columnas en pantallas medianas */
+  }
+
+  .logo img {
+    margin-left: auto; /* Centra el logo en pantallas medianas */
+    margin-right: auto;
+  }
+
+  .menu {
+    flex: 1; /* Ajusta el ancho del menú en pantallas medianas */
+    margin-top: 20px; /* Agrega un margen arriba del menú en pantallas medianas */
+  }
+
+  .menu-horizontal {
+    justify-content: center; /* Centra horizontalmente los elementos del menú en pantallas medianas */
+  }
+
+  .menu-horizontal li {
+    position: relative;
+    margin-bottom: 10px; /* Agrega un margen entre los elementos del menú en pantallas medianas */
+  }
+
+  #carrerasButton {
+    font-size: 14px; /* Ajusta el tamaño de fuente para el botón "Carreras" en pantallas medianas */
+    margin-right: 0; /* Elimina el margen derecho del botón "Carreras" en pantallas medianas */
+  }
+
+  .menu-horizontal li a {
+    padding-right: 20px; /* Ajusta el padding para los enlaces en pantallas medianas */
+    font-size: 14px; /* Ajusta el tamaño de fuente para los enlaces en pantallas medianas */
+  }
+}
+/* Estilos generales */
+
+/* Define tus estilos para el encabezado, logo y otros elementos aquí */
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .menu-horizontal {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    text-align: center; /* Alinea el menú en el centro horizontal */
+  }
+
+  .menu-horizontal ul {
+    padding: 0; /* Elimina el espacio interno en la lista */
+  }
+
+  .menu-horizontal li {
+    margin: 10px 0; /* Agrega un margen en la parte superior e inferior de cada elemento de la lista */
+  }
+
+  .mobile-menu-button {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu-button:focus {
+    outline: none;
+  }
+
+  .mobile-menu-open .menu-horizontal {
+    max-height: 500px; /* Ajusta la altura máxima deseada */
+    transition: max-height 0.3s ease-in;
+  }
+}
+  /* Contenedor de la animación */
+.imgclaus {
+  position: absolute; /* Para colocar la animación encima del menú */
+  top: 15%; /* Centrar verticalmente dentro del menú */
+  left: 90%; /* Centrar horizontalmente dentro del menú */
+  transform: translate(-50%, -50%); /* Ajuste para centrar con precisión */
+  pointer-events: none; /* Para que la animación no bloquee interacciones del menú */
+  z-index: 10; /* Asegura que esté encima de otros elementos del menú */
+}
+
+/* Ajustes específicos para el reproductor */
+.imgclaus dotlottie-player {
+  width: 100%;
+  height: 100%;
+}

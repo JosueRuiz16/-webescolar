@@ -1,0 +1,164 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  scroll-behavior: smooth; /* efecto para navegar en la misma pagina  */
+}
+.mision h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 27px;
+  font-family: "Segoe UI";
+}
+.mision p {
+  text-align: justify;
+  margin-left: 26px;
+  margin-right: 26px;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: "Segoe UI";
+}
+.vision h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 26px;
+  text-transform: capitalize;
+  font-family: "Segoe UI";
+}
+.vision p {
+  text-align: justify;
+  margin-left: 26px;
+  margin-right: 26px;
+  font-size: 18px;
+  margin-top: 20px;
+  font-family: "Segoe UI";
+}
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+}
+@media screen and (max-width: 576px) {
+  .info-biblioteca {
+    margin: 0;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .info-biblioteca {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .info-biblioteca {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+.subtitulo {
+  text-align: center;
+  margin-top: 50px;
+}
+
+hr {
+  width: 50%;
+  margin: auto;
+}
+
+/* Biblioteca */
+.biblioteca-contenedora {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.img-biblio img {
+  width: 100%; /* Hacemos que las imágenes ocupen todo el ancho del contenedor */
+  max-width: 400px; /* Limitamos el ancho máximo de las imágenes a 400px */
+}
+
+.info-biblioteca {
+  flex: 1;
+  margin-top: 20px;
+  font-family: "Segoe UI";
+}
+
+.info-biblioteca h1 {
+  margin-bottom: 10px;
+}
+
+.info-biblioteca ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-biblioteca li {
+  margin-bottom: 20px;
+}
+
+.info-biblioteca2 {
+  flex: 1;
+  margin-top: 20px;
+  font-family: "Segoe UI";
+}
+
+.info-biblioteca2 p {
+  margin-bottom: 20px;
+  font-family: "Segoe UI";
+}
+
+.info-biblioteca2 p a {
+  text-decoration: none;
+  color: brown;
+  font-family: "Segoe UI";
+}
+
+/* Cancha de fútbol */
+.cancha-futibul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  font-family: "Segoe UI";
+}
+
+.cancha-futibul img {
+  width: 100%; /* Hacemos que las imágenes ocupen todo el ancho del contenedor */
+  max-width: 400px; /* Limitamos el ancho máximo de las imágenes a 400px */
+}
+
+.cancha-1 {
+  flex: 1;
+  margin-top: 20px;
+}
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .biblioteca-contenedora,
+  .cancha-futibul {
+    flex-direction: column; /* Cambiamos la dirección a columna en móviles */
+  }
+
+  .info-biblioteca,
+  .info-biblioteca2,
+  .cancha-1 {
+    flex: none; /* Quitamos el crecimiento flexible para ocupar el ancho necesario */
+  }
+
+  .img-biblio,
+  .info-biblioteca,
+  .info-biblioteca2,
+  .cancha-1 {
+    width: 100%; /* Aseguramos que ocupen todo el ancho en móviles */
+  }
+}
+.staff1 button {
+  width: 180px; /* Establece el ancho deseado del botón */
+  height: 70px; /* Establece la altura deseada del botón */
+  font-size: 40px; /* Aumenta el tamaño del texto dentro del botón */
+  background-color: aqua;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
